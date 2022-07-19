@@ -1,7 +1,7 @@
 from qbittorrent import Client
 
-
-qb = Client("http://127.0.0.1:8080/")
+qb_adress = input("qb: \n")
+qb = Client(str(qb_adress))
 
 qb.login("admin", "adminadmin")
 
